@@ -3,7 +3,7 @@
 # one per file or that sed stops matching.
 cask "slopdesk" do
   version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "9dfbb52c1309c323723c4a8b6699ce34784d4fd7275670cc096b432f4521b1a5"
 
   url "https://github.com/aislopware/slop-desk/releases/download/v#{version}/SlopDesk-#{version}-arm64.dmg"
   name "SlopDesk"

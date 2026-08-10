@@ -6,7 +6,7 @@ class Slopdesk < Formula
   homepage "https://github.com/aislopware/slop-desk"
   version "0.1.0"
   url "https://github.com/aislopware/slop-desk/releases/download/v#{version}/slopdesk-cli-#{version}-arm64.tar.gz"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "2bb7e3022d03deabd47d57802910f2eeb97889f07404342c4947703a3dc8618a"
   license "MIT"
 
   # Apple silicon only, and not by preference: the client links libghostty, which ships a
