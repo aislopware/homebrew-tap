@@ -12,7 +12,7 @@ cask "slopdesk" do
 
   # See the formula for why arm64 is a hard requirement rather than a default.
   depends_on arch: :arm64
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "SlopDesk.app"
   app "SlopDeskHost.app"
