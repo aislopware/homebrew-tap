@@ -25,9 +25,9 @@ class Slopdesk < Formula
       There is no app-layer authentication by design — reach it over a private WireGuard
       mesh, never over an address the public internet can route to.
 
-      The SlopDesk client app (brew install --cask slopdesk) offers to symlink its own bundled
-      copy to /usr/local/bin/slopdesk on first launch. Decline it, or this formula's binary in
-      #{HOMEBREW_PREFIX}/bin will shadow it and the two can drift apart.
+      This formula is the only source of the command-line tools. The cask ships the two app
+      bundles and nothing else — SlopDesk.app carries no copy of `slopdesk` inside it — so the
+      app's first-launch "Install the CLI" card has nothing to link and reports so.
     EOS
   end
 

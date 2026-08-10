@@ -22,9 +22,9 @@ cask "slopdesk" do
     Security). macOS keys both grants to the code signature, so they survive an upgrade in
     place -- but an unsigned local build of the same app will not inherit them.
 
-    SlopDesk.app offers to symlink its bundled command-line tool to /usr/local/bin/slopdesk on
-    first launch. If you also run `brew install slopdesk`, decline that offer: the formula's
-    copy in the Homebrew prefix takes precedence on PATH and the two would drift apart.
+    This cask installs the two app bundles only. The command-line tools (slopdesk,
+    slopdesk-hostd, slopdesk-ctl) are a separate package: `brew install slopdesk`. SlopDesk.app
+    carries no copy of the CLI, so its first-launch "Install the CLI" card has nothing to link.
   EOS
 
   zap trash: [
