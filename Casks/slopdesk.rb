@@ -2,8 +2,8 @@
 # which rewrites the `version` and `sha256` lines below. Keep both at two-space indentation and
 # one per file or that sed stops matching.
 cask "slopdesk" do
-  version "0.2.0"
-  sha256 "d8093d92624e4dcf87dd305a56eb412d6ea8fb9f0b3369e892f7d7b432a84854"
+  version "0.2.1"
+  sha256 "466678f35e04caca09841a87d0a6982b9531cdef9639c44f6425bcd5f26f302b"
 
   url "https://github.com/aislopware/slop-desk/releases/download/v#{version}/SlopDesk-#{version}-arm64.dmg"
   name "SlopDesk"
