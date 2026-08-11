@@ -4,9 +4,9 @@
 class Slopdesk < Formula
   desc "Low-latency remote coding: SlopDesk host daemon and command-line tools"
   homepage "https://github.com/aislopware/slop-desk"
-  version "0.2.1"
+  version "0.2.2"
   url "https://github.com/aislopware/slop-desk/releases/download/v#{version}/slopdesk-cli-#{version}-arm64.tar.gz"
-  sha256 "24f7011793a9f7c1fab0ac7b5c443e102c4242a321f250d328793f051cc4babd"
+  sha256 "3d9cda6bd3885044cb05374ae99344249a5d3599158418fd6cb42f19158eabb9"
   license "MIT"
 
   # Apple silicon only, and not by preference: the client links libghostty, which ships a
