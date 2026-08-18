@@ -15,7 +15,7 @@ cask "slopshot" do
 
   # No `depends_on arch:` — the DMG is universal (arm64 + x86_64). Intel Macs run macOS 15, so
   # there is no reason to drop them. Sequoia matches LSMinimumSystemVersion in Support/Info.plist.
-  depends_on macos: ">= :sequoia"
+  depends_on macos: :sequoia
 
   app "SlopShot.app"
 
