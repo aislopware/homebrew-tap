@@ -19,6 +19,17 @@ cask "slopshot" do
 
   app "SlopShot.app"
 
+  # `brew upgrade` swaps the bundle under a running SlopShot: the old process keeps going (hotkeys
+  # still bound to the old code) until the user quits it by hand. So send it SIGTERM once the new
+  # bundle is in place. Relaunching can't happen here -- install steps run sandboxed and `open` is
+  # refused by LaunchServices -- so the app does it itself (Sources/UpdateRelauncher.swift): on
+  # SIGTERM, if the bundle at its path is now a different one, it opens that and exits.
+  # No `uninstall quit:` on purpose: an upgrade runs the OLD cask's uninstall stanza BEFORE the
+  # new bundle lands, so the app would quit seeing nothing replaced and never come back.
+  postflight_steps do
+    terminate_process "SlopShot"
+  end
+
   caveats <<~EOS
     SlopShot is a menu-bar app with no Dock icon -- look for the "S" in the menu bar.
 
