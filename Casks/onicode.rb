@@ -3,7 +3,7 @@
 # indentation and one per file or that sed stops matching.
 cask "onicode" do
   version "0.3.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "9d350c3ee28b2255e5ea59947bdd8151ab4f0ddcddfea46e7cff98b2a50fd43d"
 
   url "https://github.com/aislopware/onicode/releases/download/v#{version}/Onicode-#{version}-arm64.zip"
   name "Onicode"
