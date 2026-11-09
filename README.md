@@ -34,12 +34,13 @@ and Intel Macs run macOS 15, so the cask declares no `depends_on arch:`.
 
 ## Onicode
 
-A native control plane for coding agents: many Macs, one app, peer to peer over your tailnet.
+A minimal GUI for coding agents (Claude Code, Codex, Cursor, OpenCode and more), with web and
+mobile clients that connect to it over your network or tailnet.
 
-**Apple silicon only, macOS 27.2 or newer**, the app's floor. Onicode updates itself from its
-release feed (checking each download's digest and Developer ID signature), so the cask is
-`auto_updates` and `brew upgrade` leaves it alone unless asked with `--greedy`. The cask follows
-stable releases; Beta is a channel chosen inside the app.
+**Apple silicon only, macOS 13 (Ventura) or newer.** The app updates itself from its
+better-update feed, so the cask is `auto_updates` and `brew upgrade` leaves it alone unless asked
+with `--greedy`. The cask's `version` is the app version plus the better-update release id, which
+the download URL needs.
 
 ## This tap is machine-maintained
 
