@@ -2,8 +2,8 @@
 # `version` (app version, better-update release id) and `sha256` lines below. Keep both at two-space
 # indentation and one per file or that sed stops matching.
 cask "onicode" do
-  version "0.5.0,d9edbf4e-a918-4a33-984f-0e23bcd4aa4a"
-  sha256 "442394816890c8c7cebfeef92bd94708a32a69cad894a78004fb6a613980f04c"
+  version "0.6.0,bfcc4b7c-07e2-4a9c-b46d-7afeef910f82"
+  sha256 "f78c80bf3b13b0ddba0091029eae7b529dc6df40b407d7d3af6593cc04469ae2"
 
   url "https://updates.jmango360.dev/feeds/59625ece-aea5-49b4-8978-1f045f907d92/macos/download/#{version.csv.second}/Onicode-#{version.csv.first}-arm64.zip"
   name "Onicode"
