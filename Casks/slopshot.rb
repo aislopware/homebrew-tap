@@ -5,8 +5,8 @@
 # 0.0.0 with a zeroed digest is the pre-first-release placeholder: the URL it builds does not
 # exist yet, so the failure is a 404 rather than a wrong app. The first tag pushed replaces both.
 cask "slopshot" do
-  version "0.12.0"
-  sha256 "9f355f1e096d441e88d41d9ffaf14ffe58a9ddbb7331385a76ee140dcf505122"
+  version "0.12.1"
+  sha256 "af9d9a3586923b0e99329e72252e1cc1ef13e00a0b5b527f1b22917fc6b0f722"
 
   url "https://github.com/aislopware/slop-shot/releases/download/v#{version}/SlopShot-#{version}-universal.dmg"
   name "SlopShot"
