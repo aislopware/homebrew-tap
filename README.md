@@ -1,7 +1,8 @@
 # aislopware/homebrew-tap
 
-Homebrew tap for [SlopDesk](https://github.com/aislopware/slop-desk) and
-[SlopShot](https://github.com/aislopware/slop-shot).
+Homebrew tap for [SlopDesk](https://github.com/aislopware/slop-desk),
+[SlopShot](https://github.com/aislopware/slop-shot) and
+[flyline](https://github.com/aislopware/flyline).
 
 ```bash
 brew install aislopware/tap/slopdesk         # slopdesk, slopdesk-hostd, slopdesk-ctl
@@ -36,3 +37,15 @@ and Intel Macs run macOS 15, so the cask declares no `depends_on arch:`.
 rewritten by the `tap` job in each product repo's `.github/workflows/release.yml` on every
 release. Edit anything else you like; leave those two lines one-per-file at two-space
 indentation, or the bump stops matching and releases silently stop updating the tap.
+
+## flyline
+
+```bash
+brew uninstall flyline                  # homebrew-core's build, if installed: same lib/bash/flyline
+brew install aislopware/tap/flyline     # latest tag; add --HEAD to build master
+```
+
+A Rust readline replacement for Bash (syntax highlighting, autosuggestions, fuzzy history),
+continued from [HalFrgrd/flyline](https://github.com/HalFrgrd/flyline). Built from source with
+Cargo, so it is not covered by the Developer ID note above. Load it from an interactive Homebrew
+bash with `enable -f "$(brew --prefix)/lib/bash/flyline" flyline`.
