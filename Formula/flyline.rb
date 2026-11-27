@@ -5,8 +5,8 @@
 class Flyline < Formula
   desc "Bash plugin that replaces readline: highlighting, autosuggestions, fuzzy history"
   homepage "https://github.com/aislopware/flyline"
-  url "https://github.com/aislopware/flyline/archive/refs/tags/v2.0.3.tar.gz"
-  sha256 "fe7c88e89e47d32d53436217949a20ec1b8826885376f874f80dfc5448dbe361"
+  url "https://github.com/aislopware/flyline/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "63be1264502306cf7d79df50ba57dac1308a88b402cc63d5e0fae2eb7f17a27c"
   license any_of: ["GPL-3.0-only", "MIT"]
   head "https://github.com/aislopware/flyline.git", branch: "master"
 
